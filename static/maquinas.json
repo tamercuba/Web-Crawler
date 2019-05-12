@@ -1,0 +1,12 @@
+[
+{"storage": "10 GB", "cpu": "1 CPU", "memory": "512 MB", "bandwidth": "0.50 TB", "price": "$2.50"},
+{"storage": "10 GB", "cpu": "1 CPU", "memory": "512 MB", "bandwidth": "0.50 TB", "price": "$3.50"},
+{"storage": "25 GB", "cpu": "1 CPU", "memory": "1024 MB", "bandwidth": "1 TB", "price": "$5"},
+{"storage": "55 GB", "cpu": "1 CPU", "memory": "2 GB", "bandwidth": "2 TB", "price": "$10"},
+{"storage": "80 GB", "cpu": "2 CPU", "memory": "4 GB", "bandwidth": "3 TB", "price": "$20"},
+{"storage": "160 GB", "cpu": "4 CPU", "memory": "8 GB", "bandwidth": "4 TB", "price": "$40"},
+{"storage": "320 GB", "cpu": "6 CPU", "memory": "16 GB", "bandwidth": "5 TB", "price": "$80"},
+{"storage": "640 GB", "cpu": "8 CPU", "memory": "32 GB", "bandwidth": "6 TB", "price": "$160"},
+{"storage": "1280 GB", "cpu": "16 CPU", "memory": "64 GB", "bandwidth": "10 TB", "price": "$320"},
+{"storage": "1600 GB", "cpu": "24 CPU", "memory": "96 GB", "bandwidth": "15 TB", "price": "$640"}
+]
