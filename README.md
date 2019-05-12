@@ -27,8 +27,8 @@ A saída também está salva no arquivo `static/maquinas.json`
 
 ## Histórico de versões
 
-* [v0.1](https://github.com/tamercuba/Web-Crawler/tree/v0.1)
 * v0.2 - ATUAL
+* [v0.1](https://github.com/tamercuba/Web-Crawler/tree/v0.1)
 
 ## Contato
 * [LinkedIn](https://linkedin.com/in/tamercuba)
