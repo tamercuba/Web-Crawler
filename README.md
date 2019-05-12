@@ -8,7 +8,7 @@ O objetivo do projeto é fazer um app que acesse o site da [Vultr](https://www.v
 * Acessa o site da Vultr e exibe os dados no terminal
 
 ## Dependências
-As depêndencias utilizadas estão no arquivo `requirements.txt`, o aplicativo só foi testado em ambiente Linux (Kernel 4.19.36-1).
+As depêndencias utilizadas estão no arquivo `static/requirements.txt`, o aplicativo só foi testado em ambiente Linux (Kernel 4.19.36-1).
 
 ## Instalação
 Siga os seguintes passos:
