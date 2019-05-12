@@ -23,6 +23,10 @@ Agora está tudo pronto para rodar o aplicativo, execute `./manage.py`.
 Sua saída será semelhante a essa:
 ![](https://raw.githubusercontent.com/tamercuba/Web-Crawler/master/static/output_print.png)
 
+## Histórico de versões
+
+* v0.1 - ATUAL
+
 ## Contato
 * [LinkedIn](https://linkedin.com/in/tamercuba)
 * [Facebook](https://www.fb.com/tamercuba)
