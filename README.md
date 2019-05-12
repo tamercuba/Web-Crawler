@@ -2,7 +2,7 @@
 >Bot web crowler criado com objetivo de coletar e armazenar especificações de hardware de máquinas oferecidas por serviços de cloud.
 
 ## Descrição
-O objetivo do projeto é fazer um app que acesse o site da [Vultr](https://www.vultr.com/pricing/) e da [DigitalOcean](https://www.digitalocean.com/pricing/#droplet) via Scrappy, acesse os valores de **Memória**, **CPU**, **Armazenamento** e **Preço**(/mês) de maneira limpa, salve esses dados em arquivos **.JSON** e **.CSV**.
+O objetivo do projeto é fazer um app que acesse o site da [Vultr](https://www.vultr.com/pricing/) e da [DigitalOcean](https://www.digitalocean.com/pricing/#droplet) via Scrapy, acesse os valores de **Memória**, **CPU**, **Armazenamento** e **Preço**(/mês) de maneira limpa, salve esses dados em arquivos **.JSON** e **.CSV**.
 
 ## Features
 * Acessa o site da Vultr e exibe os dados no terminal
