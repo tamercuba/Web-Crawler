@@ -19,7 +19,7 @@ Siga os seguintes passos:
 1. Execute `pip install -r requirements.txt` para baixar as dependências.
 1. Dê permissão de execução ao arquivo `main.py` rodando `sudo chmod 777 main.py`
 
-Agora está tudo pronto para rodar o aplicativo, execute `./manage.py`.
+Agora está tudo pronto para rodar o aplicativo, execute `./main.py`.
 
 Sua saída será semelhante a essa:
 ![](https://raw.githubusercontent.com/tamercuba/Web-Crawler/master/static/output_print.png)
