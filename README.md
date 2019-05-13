@@ -6,7 +6,7 @@ O objetivo do projeto é fazer um app que acesse o site da [Vultr](https://www.v
 
 ## Features
 * Acessa o site da Vultr e exibe os dados no terminal
-* Salva os dados em formato Json
+* Salva os dados em formato JSON e CSV
 
 ## Dependências
 As depêndencias utilizadas estão no arquivo `static/requirements.txt`, o aplicativo só foi testado em ambiente Linux (Kernel 4.19.36-1).
@@ -23,11 +23,12 @@ Agora está tudo pronto para rodar o aplicativo, execute `./main.py`.
 
 Sua saída será semelhante a essa:
 ![](https://raw.githubusercontent.com/tamercuba/Web-Crawler/master/static/output_print.png)
-A saída também está salva no arquivo `static/maquinas.json`
+A saída também está salva nos arquivos `static/maquinas.json` e `static/maquinas.csv`.
 
 ## Histórico de versões
 
-* v0.2 - ATUAL
+* v0.3 - ATAUAL
+* [v0.2](https://github.com/tamercuba/Web-Crawler/tree/v0.2)
 * [v0.1](https://github.com/tamercuba/Web-Crawler/tree/v0.1)
 
 ## Contato
