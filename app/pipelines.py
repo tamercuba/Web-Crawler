@@ -5,12 +5,12 @@ class CustomJsonExporter(JsonItemExporter):
     def _beautify_newline(self):
         self.file.write(b'\n')
 
-class PrintItem(object):
+class PrintItem:
     def process_item(self, item, spider):
         print(dict(item))
         return item
 
-class JsonPipeline(object):
+class JsonPipeline:
     def open_spider(self, spider):
         self.file       = open('static/maquinas.json', 'wb')
         self.exporter   = CustomJsonExporter(self.file)
