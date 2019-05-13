@@ -70,6 +70,7 @@ TELNETCONSOLE_ENABLED = False
 ITEM_PIPELINES = {
     'app.pipelines.PrintItem': 300,
     'app.pipelines.JsonPipeline': 400,
+    'app.pipelines.CsvPipeline': 500,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
