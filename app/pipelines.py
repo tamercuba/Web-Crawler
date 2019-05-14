@@ -28,6 +28,7 @@ class CsvPipeline:
     def open_spider(self, spider):
         self.file       = open('static/maquinas.csv', 'wb')
         self.exporter   = CsvItemExporter(self.file)
+        self.exporter.fields_to_export = ['storage', 'cpu', 'memory', 'bandwidth', 'price']
 
     def close_spider(self, spider):
         self.exporter.finish_exporting()
