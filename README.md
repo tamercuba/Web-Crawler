@@ -5,7 +5,7 @@
 O objetivo do projeto é fazer um app que acesse o site da [Vultr](https://www.vultr.com/pricing/) e da [DigitalOcean](https://www.digitalocean.com/pricing/#droplet) via Scrapy, acesse os valores de **Memória**, **CPU**, **Armazenamento** e **Preço**(/mês) de maneira limpa, salve esses dados em arquivos **.JSON** e **.CSV**.
 
 ## Features
-* Acessa o site da Vultr e exibe os dados no terminal
+* Acessa o site da Digital Ocean e exibe os dados no terminal
 * Salva os dados em formato JSON e CSV
 
 ## Dependências
@@ -27,7 +27,8 @@ A saída também está salva nos arquivos `static/maquinas.json` e `static/maqui
 
 ## Histórico de versões
 
-* v0.3 - ATAUAL
+* v0.4 - ATUAL
+* [v0.3](https://github.com/tamercuba/Web-Crawler/tree/v0.2)
 * [v0.2](https://github.com/tamercuba/Web-Crawler/tree/v0.2)
 * [v0.1](https://github.com/tamercuba/Web-Crawler/tree/v0.1)
 
