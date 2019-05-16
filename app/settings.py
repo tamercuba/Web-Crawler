@@ -69,7 +69,7 @@ TELNETCONSOLE_ENABLED = False
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'app.pipelines.PrintItem': 300,
-    'app.pipelines.JsonPipeline': 400,
+    'app.pipelines.JsonLPipeline': 400,
     'app.pipelines.CsvPipeline': 500,
 }
 
