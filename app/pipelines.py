@@ -7,10 +7,6 @@ from scrapy.exporters import JsonItemExporter, CsvItemExporter
 # variavel global para que o Pipeline só escreva os headers para o primeiro Spider
 FIRST_SPIDER = True
 
-class CustomJsonExporter(JsonItemExporter):
-    def _beautify_newline(self):
-        self.file.write(b'\n')
-
 class PrintItem:
     def process_item(self, item, spider):
         print(dict(item))
@@ -19,7 +15,8 @@ class PrintItem:
 class JsonPipeline:
     def open_spider(self, spider):
         self.file       = open('static/maquinas.json', 'ab')
-        self.exporter   = CustomJsonExporter(self.file)
+        # self.exporter   = CustomJsonExporter(self.file)
+        self.exporter = JsonItemExporter(self.file, indent=True)
         self.exporter.start_exporting()
 
     def close_spider(self, spider):
