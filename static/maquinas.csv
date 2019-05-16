@@ -9,7 +9,6 @@ storage,cpu,memory,bandwidth,price
 640 GB,8 CPU,32 GB,6 TB,$160
 1280 GB,16 CPU,64 GB,10 TB,$320
 1600 GB,24 CPU,96 GB,15 TB,$640
-storage,cpu,memory,bandwidth,price
 25 GB,1 vCPU,1 GB,1 TB,$5/mo
 50 GB,1 vCPU,2 GB,2 TB,$10/mo
 60 GB,1 vCPU,3 GB,3 TB,$15/mo
