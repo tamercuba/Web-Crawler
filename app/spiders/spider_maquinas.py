@@ -14,11 +14,11 @@ class DigitalOceanSpider(scrapy.Spider):
 		product = ProductItem()
 		ALL_ROWS = response.xpath('//div[@id="standard-droplets-pricing-table"]').css('table.PricingTable').css('tbody').css('tr')
 		for row in ALL_ROWS:
-			product['storage']=row.css('td::text')[3].extract().strip()
-			product['cpu'] = row.css('td::text')[2].extract().strip()
+			product['storage']=row.css('td::text')[3].extract().strip().replace(',', '')
+			product['cpu'] = row.css('td::text')[2].extract().strip().replace('v', '').replace('s', '')
 			product['memory'] = row.css('td')[0].css('strong::text').extract_first()
 			product['bandwidth'] = row.css('td::text')[4].extract().strip()
-			product['price'] = row.css('td')[4].css('strong::text').extract_first()
+			product['price'] = row.css('td')[4].css('strong::text').extract_first().replace('/mo', '')
 			yield product
 
 class VultrSpider(scrapy.Spider):
@@ -38,5 +38,4 @@ class VultrSpider(scrapy.Spider):
 			product['memory']  		= row.css('div.pt__col--memory').css('b::text').extract_first()
 			product['bandwidth']  	= row.css('div.pt__col--bandwidth').css('b::text').extract_first()
 			product['price']		= row.css('div.pt__col--price').css('b::text').extract_first()
-
 			yield product
