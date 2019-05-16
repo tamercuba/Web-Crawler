@@ -8,7 +8,7 @@ class Main():
     def __init__(self):
         settings = get_project_settings()
         process = CrawlerProcess(settings)
-        #process.crawl(VultrSpider())
+        process.crawl(VultrSpider())
         process.crawl(DigitalOceanSpider())
         process.start()
 
