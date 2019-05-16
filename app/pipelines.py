@@ -1,4 +1,7 @@
 import json
+import csv
+import six
+import io
 from scrapy.exporters import JsonItemExporter, CsvItemExporter
 
 class CustomJsonExporter(JsonItemExporter):
@@ -12,7 +15,7 @@ class PrintItem:
 
 class JsonPipeline:
     def open_spider(self, spider):
-        self.file       = open('static/maquinas.json', 'wb')
+        self.file       = open('static/maquinas.json', 'ab')
         self.exporter   = CustomJsonExporter(self.file)
         self.exporter.start_exporting()
 
@@ -26,7 +29,7 @@ class JsonPipeline:
 
 class CsvPipeline:
     def open_spider(self, spider):
-        self.file       = open('static/maquinas.csv', 'wb')
+        self.file       = open('static/maquinas.csv', 'ab')
         self.exporter   = CsvItemExporter(self.file)
         self.exporter.fields_to_export = ['storage', 'cpu', 'memory', 'bandwidth', 'price']
 
