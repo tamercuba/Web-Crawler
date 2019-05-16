@@ -4,6 +4,9 @@ import six
 import io
 from scrapy.exporters import JsonItemExporter, CsvItemExporter
 
+# variavel global para que o Pipeline só escreva os headers para o primeiro Spider
+FIRST_SPIDER = True
+
 class CustomJsonExporter(JsonItemExporter):
     def _beautify_newline(self):
         self.file.write(b'\n')
@@ -29,13 +32,11 @@ class JsonPipeline:
 
 class CsvPipeline:
     def open_spider(self, spider):
+        global FIRST_SPIDER
         self.file       = open('static/maquinas.csv', 'ab')
-        if spider.name == 'digital_ocean':
-            header = False
-        else:
-            header = True
-        self.exporter   = CsvItemExporter(self.file, include_headers_line=header)
+        self.exporter   = CsvItemExporter(self.file, include_headers_line=FIRST_SPIDER)
         self.exporter.fields_to_export = ['storage', 'cpu', 'memory', 'bandwidth', 'price']
+        FIRST_SPIDER=False
 
     def close_spider(self, spider):
         self.exporter.finish_exporting()
