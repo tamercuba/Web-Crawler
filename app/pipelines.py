@@ -30,7 +30,11 @@ class JsonPipeline:
 class CsvPipeline:
     def open_spider(self, spider):
         self.file       = open('static/maquinas.csv', 'ab')
-        self.exporter   = CsvItemExporter(self.file)
+        if spider.name == 'digital_ocean':
+            header = False
+        else:
+            header = True
+        self.exporter   = CsvItemExporter(self.file, include_headers_line=header)
         self.exporter.fields_to_export = ['storage', 'cpu', 'memory', 'bandwidth', 'price']
 
     def close_spider(self, spider):
