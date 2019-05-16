@@ -6,7 +6,7 @@ O objetivo do projeto é fazer um app que acesse o site da [Vultr](https://www.v
 Optei por escrever o output em formato JSON Lines pois não é uma boa prática fazer inserções num arquivo json que já foi finalizado, o formato jsonL é ideal para esse tipo de operação com incontáveis inserções. Como pode haver necessidade de usar os dados em uma API que recebe os dados em formato json tradicional, o programa converte o jsonl para json no fim da operação utilizando o **jq**.
 
 ## Features
-* Acessa o site da Digital Ocean e exibe os dados no terminal
+* Acessa os sites da Vultr e Digital Ocean e exibe os dados no terminal
 * Salva os dados em formato JSONL e CSV
 
 ## Dependências
