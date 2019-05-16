@@ -22,7 +22,7 @@ Siga os seguintes passos:
 Agora está tudo pronto para rodar o aplicativo, execute `./main.py`.
 
 Sua saída será semelhante a essa:
-![](https://raw.githubusercontent.com/tamercuba/Web-Crawler/master/static/output_print.png)
+![](https://raw.githubusercontent.com/tamercuba/Web-Crawler/v0.3/static/output_print.png)
 A saída também está salva nos arquivos `static/maquinas.json` e `static/maquinas.csv`.
 
 ## Histórico de versões
