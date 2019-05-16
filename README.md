@@ -21,7 +21,7 @@ Siga os seguintes passos:
 Agora está tudo pronto para rodar o aplicativo, execute `./main.py`.
 
 Sua saída será semelhante a essa:
-![](https://raw.githubusercontent.com/tamercuba/Web-Crawler/master/static/output_print.png)
+![](https://raw.githubusercontent.com/tamercuba/Web-Crawler/v0.1/static/output_print.png)
 
 ## Histórico de versões
 
