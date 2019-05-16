@@ -48,9 +48,9 @@ Este web crawler foi testado apenas em ambiente Linux (kernel 4.19.36-1).
 Siga os seguintes passos:
 1. Crie uma pasta para o app na sua máquina.
 1. Instale o `jq`:
-  * `sudo pacman -S jq` para distribuições Arch
-  * `sudo apt install jq` para distribuições Debian
-  * Para demais distribuições consultar as dependências oficiais ou baixar diretamente do [site oficial jq](https://stedolan.github.io/jq/download/)
+    * `sudo pacman -S jq` para distribuições Arch
+    * `sudo apt install jq` para distribuições Debian
+    * Para demais distribuições consultar as dependências oficiais ou baixar diretamente do [site oficial jq](https://stedolan.github.io/jq/download/)
 1. Execute `virtualenv .venv` para criar um ambiente virtual e `source ./venv/bin/activate` para ativá-la.
 1. Baixe o aplicativo rodando `git clone https://github.com/filipedeschamps/video-maker.git`.
 1. Execute `pip install -r requirements.txt` para baixar as dependências.
